@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <!-- social media -->
+
+    <meta property="og:title" content="News">
+    <meta property="og:description"
+        content="A simple interactive exercise built using HTML, CSS, API, and JavaScript. It focuses on creating a clean and responsive interface while using JavaScript to handle user interactions and dynamic functionality.">
+    <meta property="og:url" content="https://malakkorashy23-source.github.io/News/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="News">
+
+    <!-- link of icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--____________________________________ links of css ____________________________________-->
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <nav class="navigation-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 part1 py-3">
+                    <div class="img py-3 d-flex justify-content-center align-items-center">
+                        <img src="./images/logo (2).webp" class="img-fluid " alt="">
+                    </div>
+                </div>
+                <div class="col-lg-12 part2  py-2">
+                    <div class="table-responsive">
+                        <ul class="navbar-nav flex-row justify-content-center align-items-center gap-3 m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link pe-3 active text-dark fs-5" data-category-name="business"
+                                    onclick="getNews('business')">Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pe-3 text-dark fs-5" data-category-name="health"
+                                    onclick="getNews('health')">Health</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pe-3 text-dark fs-5" data-category-name="science"
+                                    onclick="getNews('Science')">Science</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pe-3 text-dark fs-5" data-category-name="sports"
+                                    onclick="getNews('sports')">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" data-category-name="technology"
+                                    onclick="getNews('technology')">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="Filteration" class="py-5">
+        <div class="container">
+            <form class="m-auto">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="Category" class="form-label  ">Category</label>
+                            <select name="selectBox" id="Category" class="form-control">
+                                <option value="business" selected>Business</option>
+                                <option value="health">Health</option>
+                                <option value="science">Science</option>
+                                <option value="sports">Sports</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="Search" class="form-label">Search</label>
+                            <input type="text" class="form-control" id="Search" name="search">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success w-100">Filter</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <section id="Data">
+        <div class="container">
+            <div class="row m-auto">
+
+            </div>
+            <nav aria-label="Page navigation example" class="  my-5">
+                <div class="table-responsive">
+                    <ul class="pagination justify-content-center m-auto">
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
+    <footer>
+        <p class="mb-0">© SemiCode, Ltd. | All Rights Reserved .</p>
+    </footer>
+    <!--____________________________________ links of js ____________________________________-->
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

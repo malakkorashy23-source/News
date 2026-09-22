@@ -1,0 +1,91 @@
+nav.navigation-bar {
+    border-bottom: 1px solid #555;
+}
+
+nav.navigation-bar .part1 {
+    border-bottom: 1px solid #555;
+}
+
+nav.navigation-bar .part2 ul {
+    width: max-content;
+}
+
+nav.navigation-bar .part2 ul li a {
+    cursor: pointer;
+    font-weight: 400;
+    color: #555;
+}
+
+nav.navigation-bar .part2 ul li a.active {
+    font-weight: 700;
+    color: #000;
+}
+
+nav.navigation-bar .part2 ul li:not(:last-child) {
+    border-right: 1px solid #555;
+}
+
+#Filteration form {
+    width: 80%;
+}
+
+#Data .card {
+    height: 500px;
+    position: relative;
+}
+#Data .card  .share{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+#Data .card img {
+    height: 200px
+}
+
+#Data .card .card-body {
+    height: 300px;
+    position: relative;
+}
+#Data .card .card-body a.btn{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+#Data .card .card-body .description {
+    position: relative;
+    padding-block: 20px;
+}
+
+#Data .card .card-body .description i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#Data nav ul {
+    width: max-content;
+}
+
+#Data nav ul li {
+    cursor: pointer;
+}
+
+footer p{
+    background-color: #3e3e3e;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-block: 10px;
+}
